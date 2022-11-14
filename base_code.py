@@ -4,6 +4,7 @@ import requests
 from time import sleep
 import signal
 
+#we can customize this as we see fit
 class ApiException(Exception):
     pass
 
@@ -12,7 +13,7 @@ def signal_handler(signum, frame):
     signal.signal(signum.SIGINT, signal.SIG_DFL)
     shutdown = True
 
-API_KEY = {'KEY': '$$$$$'}
+API_KEY = {'KEY': '$$$$$'}#tbd, if we can get this to run remotely that'd be groovy
 shutdown = False
 
 #Helper functions
